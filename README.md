@@ -68,7 +68,7 @@ data
 
 ### Weights
 
-We need get the pretrained weights for [BERT-base](https://huggingface.co/bert-base-uncased), [ViT-base](https://huggingface.co/google/vit-base-patch16-224-in21k), and [Swin-based](https://huggingface.co/microsoft/swin-base-patch4-window7-224) model. 
+We need get the pretrained weights for [BERT-base](https://huggingface.co/bert-base-uncased), [ViT-base](https://huggingface.co/google/vit-base-patch16-224-in21k), and [Swin-base](https://huggingface.co/microsoft/swin-base-patch4-window7-224) model. 
 You also can use the pretrained weights downloaded by [transformers](https://github.com/huggingface/transformers) automatically, the weights will be downloaded at  `~/.cache`.
 
 
