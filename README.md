@@ -83,9 +83,9 @@ First, we set up the **arguments**, detailed information about the arguments is 
 
 
 Then, we run the ```train.py``` for model training. 
-The models need **about 20,000 GPU-Memory** (one 3090 GPU) when batch size = 64 and **about 40,000 GPU-Memory** (one A40 GPU) when batch size = 108.
+The models need about 20,000 GPU-Memory (one 3090 GPU) when batch size = 64 and about 40,000 GPU-Memory (one A40 GPU) when batch size = 108.
 You need to modify the batch size according to the hardware conditions, and we also support the **multiple GPUs** training. 
-Considering the GPU-memory limitation, we don't integrate the Gumbel-softmax sampling in the patch selection. 
+Besides, considering the GPU-memory limitation, we don't integrate the Gumbel-softmax sampling for the patch selection in the repository. 
 The performances are not affected much but GPU-memory is reduced a lot (see more details in the paper).
 
 ```
