@@ -137,7 +137,8 @@ def evalrank(model_path, model=None, data_path=None, split='dev', fold5=False, s
     logger.info(opt)
 
     # load vocabulary used by the model
-    tokenizer = BertTokenizer.from_pretrained(opt.bert_path)
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    # tokenizer = BertTokenizer.from_pretrained(opt.bert_path)
 
     # construct model
     if model is None:
