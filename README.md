@@ -85,9 +85,8 @@ First, we set up the **arguments**, detailed information about the arguments is 
 Then, we run the ```train.py``` for model training. 
 The models need **about 20,000 GPU-Memory** (one 3090 GPU) when batch size = 64 and **about 40,000 GPU-Memory** (one A40 GPU) when batch size = 108.
 You need to modify the batch size according to the hardware conditions, and we also support the **multiple GPUs** training. 
-
-Considering the GPU-memory limitation, we do not integrate the Gumbel-softmax sampling (score prediction network) in the patch selection. 
-The performances are not affected much but the GPU-memory is reducing a lot (see more details in the paper).
+Considering the GPU-memory limitation, we don't integrate the Gumbel-softmax sampling in the patch selection. 
+The performances are not affected much but GPU-memory is reduced a lot (see more details in the paper).
 
 ```
 ## single GPU
@@ -133,7 +132,7 @@ python eval.py --dataset coco --data_path data/ --gpu-id 1
 
 ## Performances
 The following tables show the reproducing results of cross-modal retrieval on **MSCOCO** and **Flickr30K** datasets. 
-We provide the training logs, checkpoints, performances, and hyper-parameters (MSCOCO-1K and MSCOCO-1K share the same model).
+We provide the training logs, checkpoints, performances, and hyper-parameters.
 
 |Datasets| Visual encoders |I2T R@1|I2T R@5|T2I R@1|T2I R@5|Model checkpoint|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
