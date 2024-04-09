@@ -1,6 +1,6 @@
 # Linguistic-Aware Patch Slimming Framework for Fine-grained Cross-Modal Alignment
 
-The official codes for our paper "[Linguistic-Aware Patch Slimming Framework for Fine-grained Cross-Modal Alignment](https://github.com/CrossmodalGroup/LAPS)", which is accepted by the  IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024.
+The official codes for our paper "[Linguistic-Aware Patch Slimming Framework for Fine-grained Cross-Modal Alignment](https://github.com/CrossmodalGroup/LAPS)", which is accepted by the  IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2024.
 We referred to the implementations of [VSE++](https://github.com/fartashf/vsepp), [SCAN](https://github.com/kuanghuei/SCAN), [GPO](https://github.com/woodfrog/vse_infty), and [HREM](https://github.com/CrossmodalGroup/HREM) to build up the repository. 
 
 
@@ -26,7 +26,7 @@ Extensive experiments on various evaluation benchmarks and model backbones show 
 ## Preparation
 
 ### Environments
-
+We recommended the following dependencies:
 - python >= 3.8
 - torch >= 1.12.0
 - torchvision >= 0.13.0
