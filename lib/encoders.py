@@ -33,13 +33,15 @@ class VisionTransEncoder(nn.Module):
         # Swin model
         if 'swin' in opt.vit_type:                           
             # img_res 224 * 224, 7*7 patch
-            self.visual_encoder = SwinModel.from_pretrained("../weights_models/microsoft--swin-base-patch4-window7-224")
+            self.visual_encoder = SwinModel.from_pretrained("microsoft/swin-base-patch4-window7-224")
+            # self.visual_encoder = SwinModel.from_pretrained("../weights_models/microsoft--swin-base-patch4-window7-224")
             opt.num_patches = 49
             print('swin model')
         #  ViT model
         else:              
             # img_res 224 * 224, 14*14 patch
-            self.visual_encoder = ViTModel.from_pretrained("../weights_models/google--vit-base-patch16-224-in21k")
+            self.visual_encoder = ViTModel.from_pretrained("google/vit-base-patch16-224-in21k")
+            # self.visual_encoder = ViTModel.from_pretrained("../weights_models/google--vit-base-patch16-224-in21k")
             opt.num_patches = 196
             print('vit model')
 
