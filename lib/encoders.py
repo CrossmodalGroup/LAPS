@@ -78,9 +78,12 @@ class EncoderText_BERT(nn.Module):
 
         self.opt = opt
         self.embed_size = opt.embed_size
-
-        self.tokenizer = BertTokenizer.from_pretrained(opt.bert_path)
-        self.bert = BertModel.from_pretrained(opt.bert_path)
+        
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+        self.bert = BertModel.from_pretrained('bert-base-uncased')
+        
+        # self.tokenizer = BertTokenizer.from_pretrained(opt.bert_path)
+        # self.bert = BertModel.from_pretrained(opt.bert_path)
         
         if opt.embed_size == self.bert.config.hidden_size:
             self.fc = nn.Identity()
