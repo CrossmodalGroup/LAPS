@@ -38,7 +38,7 @@ We recommended the following dependencies:
 ### Datasets
 
 We have prepared the caption files for two datasets in  `data/` folder, hence you just need to download the images of the datasets. 
-The Flickr30K(f30k) images can be downloaded in [flickr30k-images](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset). The MSCOCO(coco) images can be downloaded in [train2014](http://images.cocodataset.org/zips/train2014.zip), and [val2014](http://images.cocodataset.org/zips/val2014.zip).
+The Flickr30K (f30k) images can be downloaded in [flickr30k-images](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset). The MSCOCO (coco) images can be downloaded in [train2014](http://images.cocodataset.org/zips/train2014.zip), and [val2014](http://images.cocodataset.org/zips/val2014.zip).
 We hope that the final data are organized as follows:
 
 
@@ -73,7 +73,7 @@ You also can choose the weights downloaded by [transformers](https://github.com/
 
 
 ## Training
-We first set up the **arguments** (hyper-parameters) for model training. Detailed information about the arguments can be found in ```arguments.py```.
+First, we set up the **arguments**, detailed information about the arguments is shown in ```arguments.py```.
 
 - `--dataset`: the chosen datasets, e.g., `f30k` and `coco`.
 - `--data_path`: the root path of datasets, e.g., `data/`.
@@ -82,12 +82,12 @@ We first set up the **arguments** (hyper-parameters) for model training. Detaile
 - `--logger_name`, the path of logger files, e.g., `runs/f30k_test` or `runs/coco_test`
 
 
-Assuming we have set all arguments, we run the ```train.py``` for training. 
+Then, we run the ```train.py``` for model training. 
 The models need **about 20,000 GPU-Memory** (one 3090 GPU) when batch size = 64 and **about 40,000 GPU-Memory** (one A40 GPU) when batch size = 108.
-You need to modify the batch size according to the hardware conditions.
-And we provide **multiple GPUs** training programs. 
+You need to modify the batch size according to the hardware conditions, and we also support the **multiple GPUs** training. 
 
-Besides, considering the GPU-memory pressure, we do not integrate the gumbel-softmax sampling (score prediction network) in the patch selection process. The performances are not affected much but the GPU-memory is reducing a lot (see more details in the paper).
+Considering the GPU-memory limitation, we do not integrate the Gumbel-softmax sampling (score prediction network) in the patch selection. 
+The performances are not affected much but the GPU-memory is reducing a lot (see more details in the paper).
 
 ```
 ## single GPU
@@ -133,7 +133,7 @@ python eval.py --dataset coco --data_path data/ --gpu-id 1
 
 ## Performances
 The following tables show the reproducing results of cross-modal retrieval on **MSCOCO** and **Flickr30K** datasets. 
-We provide the training logs, model checkpoints, performance results, and hyper-parameter settings (MSCOCO-1K and MSCOCO-1K share the same model).
+We provide the training logs, checkpoints, performances, and hyper-parameters (MSCOCO-1K and MSCOCO-1K share the same model).
 
 |Datasets| Visual encoders |I2T R@1|I2T R@5|T2I R@1|T2I R@5|Model checkpoint|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
