@@ -47,7 +47,8 @@ def main():
         tb_logger.configure(opt.logger_name, flush_secs=5)
 
     # tokenizer for texts
-    tokenizer = BertTokenizer.from_pretrained(opt.bert_path)
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    # tokenizer = BertTokenizer.from_pretrained(opt.bert_path)
     # opt.vocab_size = len(tokenizer.vocab)
     # vocab_size of BERT model: 30522
     # print('vocab_size of BERT model:', opt.vocab_size)
