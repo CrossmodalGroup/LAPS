@@ -18,9 +18,9 @@ We propose a novel Linguistic-Aware Patch Slimming (LAPS) framework for fine-gra
 which explicitly identifies redundant visual patches with language supervision and rectifies their semantic and spatial information to facilitate more effective and consistent patch-word alignment.
 Extensive experiments on various evaluation benchmarks and model backbones show LAPS outperforms the state-of-the-art fine-grained alignment methods.
 
-<!-- <div align=center>
-<img src="imgs/fig1-2.jpg" width="80%">
-</div> -->
+<div align=center>
+<img src="imgs/fig1-2.jpg" width="100%">
+</div>
 
 
 ## Preparation
