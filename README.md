@@ -155,8 +155,5 @@ We provide the training logs, checkpoints, performances, and hyper-parameters.
     year      = {2024},
     pages     = {26307-26316}
 }
-
-}
-
 ```
 
