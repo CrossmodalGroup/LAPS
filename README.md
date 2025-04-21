@@ -147,13 +147,12 @@ We provide the training logs, checkpoints, performances, and hyper-parameters.
 ## Reference
 
 ```
-@InProceedings{fu2024linguistic,
-    author    = {Fu, Zheren and Zhang, Lei and Xia, Hou and Mao, Zhendong},
-    title     = {Linguistic-Aware Patch Slimming Framework for Fine-grained Cross-Modal Alignment},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {26307-26316}
+@inproceedings{fu2024linguistic,
+  title={Linguistic-aware patch slimming framework for fine-grained cross-modal alignment},
+  author={Fu, Zheren and Zhang, Lei and Xia, Hou and Mao, Zhendong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={26307--26316},
+  year={2024}
 }
 ```
 
